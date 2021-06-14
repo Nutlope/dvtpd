@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Toolbar, List, ListItem, Typography } from '@material-ui/core';
 import { Image, DarkModeToggler } from 'components/atoms';
 import logo_light from './Logo_light_1.png';
+import logo_dark from './Logo_dark_11.png';
 
 const useStyles = makeStyles(theme => ({
   flexGrow: {
@@ -125,7 +126,7 @@ const Topbar = ({
         <a href="/" title="thefront">
           <Image
             className={classes.logoImage}
-            src={logo_light}
+            src={themeMode === 'light' ? logo_light : logo_dark}
             alt="logo"
             lazy={false}
           />
