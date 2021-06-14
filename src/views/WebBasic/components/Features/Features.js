@@ -4,6 +4,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useMediaQuery, Grid, Typography } from '@material-ui/core';
 import { Image } from 'components/atoms';
 import { SectionHeader, CountUpNumber } from 'components/molecules';
+import gregImg from './gregdevice.png';
 
 const useStyles = makeStyles(theme => ({
   placementGrid: {
@@ -37,18 +38,18 @@ const Features = props => {
               <SectionHeader
                 title={
                   <span>
-                    Stay focused on your compliance Requirements.
+                    Smart and impressively functional.
                     <br />
                     <Typography
                       component="span"
                       variant="inherit"
                       color="primary"
                     >
-                      Let us handle the SOX testing piece.
+                      Let our device handle your DVT mitigation.
                     </Typography>
                   </span>
                 }
-                subtitle="You have a compliance program to run. Stop worrying about SOX compliance, test plans, and seasonal SOX consultants. Let us handle that for you."
+                subtitle="You have a life to get to. Stop being immobilized by wearing a compression stocking in bed all day and try our DVT device if your doctor recommends it for you. Stop worrying about DVT risks or if you're moving enough. Let us handle that for you."
                 align="left"
                 fadeUp
                 disableGutter
@@ -58,26 +59,17 @@ const Features = props => {
               <div className={classes.placementGrid}>
                 <div>
                   <CountUpNumber
-                    end={100}
-                    label="Completion rate"
+                    end={94}
+                    label="Classification accuracy"
                     textColor="primary"
                     suffix="%"
                   />
                 </div>
                 <div>
                   <CountUpNumber
-                    end={24}
-                    label="Support"
+                    end={1}
+                    label="Patent Pending"
                     textColor="primary"
-                    suffix="/7"
-                  />
-                </div>
-                <div>
-                  <CountUpNumber
-                    end={25}
-                    label="of Experience"
-                    textColor="primary"
-                    suffix=" years"
                   />
                 </div>
               </div>
@@ -93,11 +85,7 @@ const Features = props => {
           md={6}
           data-aos="fade-up"
         >
-          <Image
-            src="https://assets.maccarianagency.com/the-front/illustrations/dashboard-extended.svg"
-            alt="..."
-            className={classes.coverImage}
-          />
+          <Image src={gregImg} className={classes.coverImage} />
         </Grid>
       </Grid>
     </div>

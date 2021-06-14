@@ -4,6 +4,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useMediaQuery, Grid, Button, Typography } from '@material-ui/core';
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
+import medImage from './medecine.png';
 
 const useStyles = makeStyles(theme => ({
   image: {
@@ -31,19 +32,16 @@ const Hero = props => {
               <span>
                 Welcome to{' '}
                 <Typography component="span" variant="inherit" color="primary">
-                  pmSOX.
+                  DVT-PD.
                 </Typography>
                 <br />
-                <span>A marketplace for all your SOX testing.</span>
+                <span>A medical device to prevent DVT.</span>
               </span>
             }
-            subtitle="pmSOX gets Controls Testing done in a matter of days instead of weeks."
+            subtitle="A Wearable and Portable Smart Actuation Device for DVT Risk Mitigation."
             ctaGroup={[
               <Button variant="contained" color="primary" size="large">
                 Learn More
-              </Button>,
-              <Button variant="outlined" color="primary" size="large">
-                Get Started
               </Button>,
             ]}
             align={isMd ? 'left' : 'center'}
@@ -60,11 +58,7 @@ const Hero = props => {
           md={6}
           data-aos={'fade-up'}
         >
-          <Image
-            src="https://assets.maccarianagency.com/the-front/illustrations/mind-map.svg"
-            alt="Mind-map"
-            className={classes.image}
-          />
+          {<Image src={medImage} alt="Mind-map" className={classes.image} />}
         </Grid>
       </Grid>
     </div>

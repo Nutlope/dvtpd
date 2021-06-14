@@ -22,8 +22,8 @@ const Faq = props => {
         <Grid item xs={12}>
           <SectionHeader
             className={classes.listItemAvatar}
-            title="Start Today For a Great SOX testing experience."
-            subtitle="Get a wonderfully detailed dashboard with daily updates on your SOX Testing project and an amazing turnaround testing time."
+            title="Interested in our device?"
+            subtitle="Get in touch."
             align="center"
             ctaGroup={[
               <Button color="primary" variant="contained" size="large">

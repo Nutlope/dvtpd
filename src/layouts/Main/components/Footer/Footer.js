@@ -5,11 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { IconButton, Grid, List, ListItem } from '@material-ui/core';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import PinterestIcon from '@material-ui/icons/Pinterest';
-import logo_light from '../Topbar/Logo_trans_white.png';
-
-import { Image } from 'components/atoms';
+import logo_light from '../Topbar/Logo_dark_11.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -33,9 +29,9 @@ const useStyles = makeStyles(theme => ({
     height: 32,
   },
   logoImage: {
-    width: '150px',
-    height: '150px',
-    marginTop: '-55px',
+    width: '127px',
+    height: '33px',
+    marginTop: '5px',
   },
   groupTitle: {
     textTransform: 'uppercase',
@@ -101,18 +97,13 @@ const Footer = props => {
             <List disablePadding>
               <ListItem disableGutters className={classes.logoContainerItem}>
                 <div className={classes.logoContainer}>
-                  <Image
-                    className={classes.logoImage}
-                    src={logo_light}
-                    alt="thefront"
-                    lazy={false}
-                  />
+                  <img alt="" className={classes.logoImage} src={logo_light} />
                 </div>
               </ListItem>
             </List>
           </Grid>
           <Grid item xs={3}>
-            <p className={classes.menuGroupTitle}>Copyright pmSOX 2021©</p>
+            <p className={classes.menuGroupTitle}>Copyright Dvt-pd 2021©</p>
           </Grid>
           <Grid item xs={3}>
             <List disablePadding>
@@ -121,13 +112,7 @@ const Footer = props => {
                   <FacebookIcon className={classes.icon} />
                 </IconButton>
                 <IconButton className={classes.socialIcon}>
-                  <InstagramIcon className={classes.icon} />
-                </IconButton>
-                <IconButton className={classes.socialIcon}>
                   <TwitterIcon className={classes.icon} />
-                </IconButton>
-                <IconButton className={classes.socialIcon}>
-                  <PinterestIcon className={classes.icon} />
                 </IconButton>
               </ListItem>
             </List>

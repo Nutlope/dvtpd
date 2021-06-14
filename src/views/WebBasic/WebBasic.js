@@ -2,9 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { colors, Divider } from '@material-ui/core';
 import { Section, SectionAlternate } from 'components/organisms';
-import { About, Contact, Faq, Features, Hero, Services } from './components';
+import { Contact, Faq, Features, Hero, Services } from './components';
 
-import { services, services2, props, faq } from './data';
+import { services, props, faq } from './data';
 
 const useStyles = makeStyles(theme => ({
   pagePaddingTop: {
@@ -38,11 +38,11 @@ const WebBasic = () => {
       <SectionAlternate>
         <Contact data={props} />
       </SectionAlternate>
-      <div className={classes.shape}>
+      {/* <div className={classes.shape}>
         <Section className={classes.sectionNoPaddingTop}>
           <About data={services2} />
         </Section>
-      </div>
+      </div> */}
       <Section>
         <Features />
       </Section>

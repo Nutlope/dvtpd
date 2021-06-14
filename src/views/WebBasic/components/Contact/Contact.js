@@ -10,9 +10,9 @@ import {
   Button,
   colors,
 } from '@material-ui/core';
-import { Image } from 'components/atoms';
 import { SectionHeader, IconAlternate, TypedText } from 'components/molecules';
 import { CardProduct } from 'components/organisms';
+import contactImage from './contact.png';
 
 const FKTextField = withStyles({
   root: {
@@ -38,6 +38,7 @@ const useStyles = makeStyles(theme => ({
   formCover: {
     objectFit: 'cover',
     borderBottomLeftRadius: '40%',
+    paddingTop: '100px',
   },
   cardProduct: {
     [theme.breakpoints.up('md')]: {
@@ -67,9 +68,10 @@ const Contact = props => {
             withShadow
             liftUp
             mediaContent={
-              <Image
-                src="https://assets.maccarianagency.com/the-front/photos/coworking/place3.jpg"
-                srcSet="https://assets.maccarianagency.com/the-front/photos/coworking/place3@2x.jpg 2x"
+              <img
+                src={contactImage}
+                width="400"
+                height="250"
                 alt="Contact cover"
                 className={classes.formCover}
                 lazy={false}
@@ -132,42 +134,39 @@ const Contact = props => {
         >
           <Grid item>
             <SectionHeader
-              label="we get testing done"
               title={
                 <>
                   <span>
-                    The first marketplace
+                    The first DVT prevention device
                     <br />
                     <Typography
-                      color="secondary"
+                      color="primary"
                       variant="inherit"
                       component="span"
                     >
-                      ever created
-                    </Typography>
-                    <br />
-                    <Typography
-                      color="secondary"
-                      variant="inherit"
-                      component="span"
-                    >
-                      for&nbsp;
+                      that is&nbsp;
                     </Typography>
                   </span>
                   <TypedText
                     component="span"
                     variant="h4"
-                    color="secondary"
+                    color="primary"
                     className={classes.typed}
                     typedProps={{
-                      strings: ['SOX compliance.', 'crowdtesting.', 'testing.'],
+                      strings: [
+                        'wearable',
+                        'smart',
+                        'non-obtrusive.',
+                        'comfortable.',
+                        'highly compliant',
+                      ],
                       typeSpeed: 80,
                       loop: true,
                     }}
                   />
                 </>
               }
-              subtitle="Using pmSOX for your SOX testing needs means never worrying about meeting a SOX deadline. Our platform, talented testers and robust process will make the testing phase a pleasant experience."
+              subtitle="The device features a comprehensive control system broken down into sensing (accelerometer collecting spatial data), processing (ML model to predict patient's activity & actuation algorithm), & actuation (neuromuscular stimulation to get blood flow pumping activated by the actuation algorithm) effectively reducing the risks of DVT."
               align="left"
               disableGutter
             />
@@ -180,10 +179,10 @@ const Contact = props => {
                         size="extraSmall"
                         shape="circle"
                         fontIconClass="fas fa-check"
-                        color={colors.deepOrange}
+                        color={colors.blue}
                       />
                     </ListItemAvatar>
-                    <Typography variant="subtitle1" color="secondary" noWrap>
+                    <Typography variant="subtitle1" color="primary" noWrap>
                       {item}
                     </Typography>
                   </ListItem>

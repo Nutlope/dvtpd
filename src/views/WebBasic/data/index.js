@@ -1,21 +1,22 @@
 export const services = [
   {
-    icon: 'fas fa-layer-group',
-    title: 'Based on approved Testing Strategy',
+    icon: 'fas fa-check',
+    title: 'Comfortable and compliant',
     subtitle:
-      'We take care of sourcing qualified testers, helping you finalize your test plans, and dispatching them to preselected qualified testers as per your testing strategy & your external auditor’s requirements',
+      'We built this with an express purpose of being lightweight to not immobilize patients and with comfort in mind.',
   },
   {
-    icon: 'fas fa-shipping-fast',
-    title: 'Built for speed',
+    icon: 'fas fa-wifi',
+    title: 'Closed-loop System',
     subtitle:
-      'pmSOX is built to make your life easier. Through crowdtesting, we deliver the fastest results on the market.',
+      'Self contained and does not need to be plugged into a wall. This allows for patient mobility and a longer battery life.',
   },
+
   {
     icon: 'fab fa-sketch',
-    title: 'Monitored by a dedicated PMO',
+    title: 'Smart Actuation',
     subtitle:
-      'We establish a dedicated PMO to manage the Testing team, solve routine roadblocks & ensure continuous progress reported on a real time basis directly on your dashboard.',
+      'Senses when the patient is too inactive and then will actuate to minimize risk of developing blood clot or DVT.',
   },
 ];
 
@@ -67,12 +68,7 @@ export const partners = [
   },
 ];
 
-export const props = [
-  'Crowdtesting',
-  'Interactive Dashboard',
-  'Dedicated Testing PMO',
-  'External Auditors Requirements',
-];
+export const props = ['Unobtrusive', 'Affordable', 'Wireless', 'Effective'];
 
 export const users = [
   {
