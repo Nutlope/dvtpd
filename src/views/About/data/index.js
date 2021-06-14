@@ -1,35 +1,40 @@
-import hassanpic from './headshot1.png';
-import dadpic from './avatar-1.jpg';
-import markus from './marcus.JPG';
+import hassanpic from './me.png';
+import greg from './greg.png';
+import millo from './millo.png';
+import ray from './ray.png';
 
 export const team = [
   {
-    title: 'CEO / Co-Founder',
+    title:
+      'Built hardware prototype and NMES circuit. Worked on microcontroller code. Worked with doppler device.',
     authorPhoto: {
-      src: dadpic,
+      src: greg,
     },
-    authorName: 'Omar El Mghari',
+    authorName: 'Greg Olson - Electrical Engineer',
   },
   {
-    title: 'Marketplace Director',
+    title:
+      'Built hardware prototype. Evaluated actuation methods and built NMES circuit. Worked with doppler device.',
     authorPhoto: {
-      src: 'https://ca.slack-edge.com/T01K2TDTE1H-U01KSGQDM5W-64fbc38c780a-512',
+      src: millo,
     },
-    authorName: 'Marcel Allweins',
+    authorName: 'Millo Ling - Mechanical Engineer',
   },
   {
-    title: 'CTO / Co-founder',
+    title:
+      'In charge of all things software. Machine learning model, web server, and microcontroller code.',
     authorPhoto: {
       src: hassanpic,
     },
-    authorName: 'Hassan El Mghari',
+    authorName: 'Hassan El Mghari - Software Engineer',
   },
   {
-    title: 'Data Analytics Director',
+    title:
+      'Worked on 3D model, performed extensive research, and evaluated different technologies.',
     authorPhoto: {
-      src: markus,
+      src: ray,
     },
-    authorName: 'Markus Proesch',
+    authorName: 'Ray Ganesh - Mechanical Engineer',
   },
 ];
 

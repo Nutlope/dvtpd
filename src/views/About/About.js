@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Section } from 'components/organisms';
-import { Hero, Story, Team, WhoWeAre } from './components';
+import { Hero, Story, Team } from './components';
 import { team } from './data';
 
 const useStyles = makeStyles(theme => ({
@@ -31,12 +31,8 @@ const About = () => {
         <Story />
       </Section>
       <Section className={classes.sectionNoPaddingTop}>
-        <WhoWeAre />
-      </Section>
-      <Section className={classes.sectionNoPaddingTop}>
         <Team data={team} />
       </Section>
-      {/* <Contact data={mapData} /> */}
     </div>
   );
 };
